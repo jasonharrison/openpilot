@@ -692,7 +692,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "",
       "",
       AlertStatus.normal, AlertSize.none,
-      Priority.MID, VisualAlert.none, AudibleAlert.promptSingleLow, .45),
+      Priority.MID, VisualAlert.none, AudibleAlert.none, .45),
   },
 
   EventName.speedLimitConfirmed: {
@@ -700,7 +700,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
       "",
       "",
       AlertStatus.normal, AlertSize.none,
-      Priority.MID, VisualAlert.none, AudibleAlert.promptSingleHigh, .45),
+      Priority.MID, VisualAlert.none, AudibleAlert.none, .45),
   },
 
   # ********** events that affect controls state transitions **********
