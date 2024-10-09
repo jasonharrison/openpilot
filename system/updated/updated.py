@@ -110,12 +110,12 @@ def setup_git_options(cwd: str) -> None:
 
   # Set protocol to the new version (default after git 2.26) to reduce data
   # usage on git fetch --dry-run from about 400KB to 18KB.
-    # ("core.sshCommand", "ssh -i /data/ssh/id_ed25519"),
   git_cfg = [
     ("core.trustctime", "false"),
     ("core.checkStat", "minimal"),
     ("protocol.version", "2"),
     ("gc.auto", "0"),
+    ("core.sshCommand", "ssh -i /data/ssh/id_ed25519"),
     ("gc.autoDetach", "false"),
   ]
   for option, value in git_cfg:
