@@ -327,6 +327,10 @@ class DriverMonitoring:
       self._reset_awareness()
       return
 
+    # Reset the driver monitoring system due to recurring issues with the system incorrectly detecting driver distraction
+    self._reset_awareness()
+    return
+
     driver_attentive = self.driver_distraction_filter.x < 0.37
     awareness_prev = self.awareness
 
